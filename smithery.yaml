@@ -1,0 +1,10 @@
+name: ecommerce-ai-mcp
+description: "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/ecommerce-ai-mcp
+license: MIT
+categories: [E-Commerce, Retail]
+tags: [ecommerce, online-retail, product-management, pricing-optimization, retail-analytics]
+runtime: python
+entrypoint: server.py
