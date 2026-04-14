@@ -1,10 +1,94 @@
 name: ecommerce-ai-mcp
-description: "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/ecommerce-ai-mcp
-license: MIT
-categories: [E-Commerce, Retail]
-tags: [ecommerce, online-retail, product-management, pricing-optimization, retail-analytics]
-runtime: python
-entrypoint: server.py
+description: '**Online Retail Intelligence**'
+version: 1.0.0
+tools:
+- name: write_product_description
+  description: Generate a compelling product description for an e-commerce listing.
+  parameters:
+  - name: product_name
+    type: string
+    required: true
+  - name: category
+    type: string
+    required: true
+  - name: features
+    type: array
+    required: true
+  - name: target_audience
+    type: string
+    required: false
+  - name: tone
+    type: string
+    required: false
+  - name: price
+    type: number
+    required: false
+  - name: include_bullet_points
+    type: boolean
+    required: false
+- name: optimize_pricing
+  description: Optimize product pricing using market data and strategy.
+  parameters:
+  - name: cost
+    type: number
+    required: true
+  - name: competitor_prices
+    type: array
+    required: false
+  - name: strategy
+    type: string
+    required: false
+  - name: target_margin_pct
+    type: number
+    required: false
+  - name: demand_level
+    type: string
+    required: false
+- name: summarize_reviews
+  description: Summarize product reviews into actionable insights.
+  parameters:
+  - name: reviews
+    type: array
+    required: true
+- name: forecast_inventory
+  description: Forecast inventory needs and generate reorder recommendations.
+  parameters:
+  - name: product_name
+    type: string
+    required: true
+  - name: current_stock
+    type: integer
+    required: true
+  - name: daily_sales_avg
+    type: number
+    required: true
+  - name: lead_time_days
+    type: integer
+    required: false
+  - name: safety_stock_days
+    type: integer
+    required: false
+  - name: sales_history
+    type: array
+    required: false
+  - name: seasonal_factor
+    type: number
+    required: false
+- name: generate_seo_meta
+  description: Generate SEO-optimized meta tags for product pages.
+  parameters:
+  - name: product_name
+    type: string
+    required: true
+  - name: category
+    type: string
+    required: true
+  - name: features
+    type: array
+    required: true
+  - name: brand
+    type: string
+    required: false
+  - name: target_keywords
+    type: array
+    required: false

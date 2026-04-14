@@ -1,24 +1,172 @@
 {
   "name": "ecommerce-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Built by MEOK AI Labs | https://meok.ai",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/ecommerce-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "**Online Retail Intelligence**",
+  "version": "1.0.0",
   "tools": [
-    "write_product_description",
-    "optimize_pricing",
-    "summarize_reviews",
-    "forecast_inventory",
-    "generate_seo_meta"
-  ],
-  "categories": [
-    "E-Commerce",
-    "Retail"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "write_product_description",
+      "description": "Generate a compelling product description for an e-commerce listing.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_audience": {
+            "type": "string"
+          },
+          "tone": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "nullable": true
+          },
+          "include_bullet_points": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "product_name",
+          "category",
+          "features"
+        ]
+      }
+    },
+    {
+      "name": "optimize_pricing",
+      "description": "Optimize product pricing using market data and strategy.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cost": {
+            "type": "number"
+          },
+          "competitor_prices": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "nullable": true
+          },
+          "strategy": {
+            "type": "string"
+          },
+          "target_margin_pct": {
+            "type": "number",
+            "nullable": true
+          },
+          "demand_level": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cost"
+        ]
+      }
+    },
+    {
+      "name": "summarize_reviews",
+      "description": "Summarize product reviews into actionable insights.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reviews": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "reviews"
+        ]
+      }
+    },
+    {
+      "name": "forecast_inventory",
+      "description": "Forecast inventory needs and generate reorder recommendations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_name": {
+            "type": "string"
+          },
+          "current_stock": {
+            "type": "integer"
+          },
+          "daily_sales_avg": {
+            "type": "number"
+          },
+          "lead_time_days": {
+            "type": "integer"
+          },
+          "safety_stock_days": {
+            "type": "integer"
+          },
+          "sales_history": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "nullable": true
+          },
+          "seasonal_factor": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "product_name",
+          "current_stock",
+          "daily_sales_avg"
+        ]
+      }
+    },
+    {
+      "name": "generate_seo_meta",
+      "description": "Generate SEO-optimized meta tags for product pages.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "brand": {
+            "type": "string",
+            "nullable": true
+          },
+          "target_keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "required": [
+          "product_name",
+          "category",
+          "features"
+        ]
+      }
+    }
+  ]
 }

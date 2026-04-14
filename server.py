@@ -6,6 +6,11 @@ Product description writing, pricing optimization, review summarization,
 inventory forecasting, and SEO meta generation.
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import time
 import math
 from datetime import datetime, timezone
@@ -63,7 +68,7 @@ def write_product_description(
     target_audience: str = "general",
     tone: str = "professional",
     price: Optional[float] = None,
-    include_bullet_points: bool = True) -> dict:
+    include_bullet_points: bool = True, api_key: str = "") -> dict:
     """Generate a compelling product description for an e-commerce listing.
 
     Args:
@@ -75,6 +80,10 @@ def write_product_description(
         price: Product price (for value messaging).
         include_bullet_points: Whether to include formatted bullet points.
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -133,7 +142,7 @@ def optimize_pricing(
     competitor_prices: Optional[list[float]] = None,
     strategy: str = "competitive",
     target_margin_pct: Optional[float] = None,
-    demand_level: str = "medium") -> dict:
+    demand_level: str = "medium", api_key: str = "") -> dict:
     """Optimize product pricing using market data and strategy.
 
     Args:
@@ -143,6 +152,10 @@ def optimize_pricing(
         target_margin_pct: Target gross margin percentage (overrides strategy default).
         demand_level: low | medium | high (affects pricing recommendations).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -211,12 +224,16 @@ def optimize_pricing(
 
 @mcp.tool()
 def summarize_reviews(
-    reviews: list[dict]) -> dict:
+    reviews: list[dict], api_key: str = "") -> dict:
     """Summarize product reviews into actionable insights.
 
     Args:
         reviews: List with keys: rating (1-5), text, verified (bool, optional).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -298,7 +315,7 @@ def forecast_inventory(
     lead_time_days: int = 14,
     safety_stock_days: int = 7,
     sales_history: Optional[list[float]] = None,
-    seasonal_factor: float = 1.0) -> dict:
+    seasonal_factor: float = 1.0, api_key: str = "") -> dict:
     """Forecast inventory needs and generate reorder recommendations.
 
     Args:
@@ -310,6 +327,10 @@ def forecast_inventory(
         sales_history: Optional list of recent daily sales for trend analysis.
         seasonal_factor: Seasonal demand multiplier (1.0 = normal, 1.5 = 50% higher).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -375,7 +396,7 @@ def generate_seo_meta(
     category: str,
     features: list[str],
     brand: Optional[str] = None,
-    target_keywords: Optional[list[str]] = None) -> dict:
+    target_keywords: Optional[list[str]] = None, api_key: str = "") -> dict:
     """Generate SEO-optimized meta tags for product pages.
 
     Args:
@@ -385,6 +406,10 @@ def generate_seo_meta(
         brand: Brand name.
         target_keywords: Specific keywords to target.
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
