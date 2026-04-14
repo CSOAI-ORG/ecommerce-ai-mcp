@@ -14,10 +14,7 @@ from typing import Optional
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP(
-    "ecommerce-ai",
-    version="1.0.0",
-    description="E-commerce AI - product copy, pricing, review summaries, inventory, SEO",
-)
+    "ecommerce-ai")
 
 # ---------------------------------------------------------------------------
 # Rate limiting
@@ -66,8 +63,7 @@ def write_product_description(
     target_audience: str = "general",
     tone: str = "professional",
     price: Optional[float] = None,
-    include_bullet_points: bool = True,
-) -> dict:
+    include_bullet_points: bool = True) -> dict:
     """Generate a compelling product description for an e-commerce listing.
 
     Args:
@@ -137,8 +133,7 @@ def optimize_pricing(
     competitor_prices: Optional[list[float]] = None,
     strategy: str = "competitive",
     target_margin_pct: Optional[float] = None,
-    demand_level: str = "medium",
-) -> dict:
+    demand_level: str = "medium") -> dict:
     """Optimize product pricing using market data and strategy.
 
     Args:
@@ -216,8 +211,7 @@ def optimize_pricing(
 
 @mcp.tool()
 def summarize_reviews(
-    reviews: list[dict],
-) -> dict:
+    reviews: list[dict]) -> dict:
     """Summarize product reviews into actionable insights.
 
     Args:
@@ -304,8 +298,7 @@ def forecast_inventory(
     lead_time_days: int = 14,
     safety_stock_days: int = 7,
     sales_history: Optional[list[float]] = None,
-    seasonal_factor: float = 1.0,
-) -> dict:
+    seasonal_factor: float = 1.0) -> dict:
     """Forecast inventory needs and generate reorder recommendations.
 
     Args:
@@ -382,8 +375,7 @@ def generate_seo_meta(
     category: str,
     features: list[str],
     brand: Optional[str] = None,
-    target_keywords: Optional[list[str]] = None,
-) -> dict:
+    target_keywords: Optional[list[str]] = None) -> dict:
     """Generate SEO-optimized meta tags for product pages.
 
     Args:
