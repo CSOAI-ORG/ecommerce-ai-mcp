@@ -1,5 +1,6 @@
 name: ecommerce-ai-mcp
-description: "\x01"
+description: AI-powered ecommerce ai MCP server for agents. Supports write product
+  description, optimize pricing, summarize reviews. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: write_product_description

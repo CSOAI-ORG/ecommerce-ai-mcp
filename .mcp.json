@@ -1,6 +1,6 @@
 {
   "name": "ecommerce-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 \u0001",
+  "description": "AI-powered ecommerce ai MCP server for agents. Supports write product description, optimize pricing, summarize reviews. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
