@@ -1,6 +1,6 @@
 {
   "name": "ecommerce-ai-mcp",
-  "description": "**Online Retail Intelligence**",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -16,10 +16,7 @@
             "type": "string"
           },
           "features": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "array"
           },
           "target_audience": {
             "type": "string"
@@ -28,8 +25,7 @@
             "type": "string"
           },
           "price": {
-            "type": "number",
-            "nullable": true
+            "type": "number"
           },
           "include_bullet_points": {
             "type": "boolean"
@@ -52,18 +48,13 @@
             "type": "number"
           },
           "competitor_prices": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            },
-            "nullable": true
+            "type": "number"
           },
           "strategy": {
             "type": "string"
           },
           "target_margin_pct": {
-            "type": "number",
-            "nullable": true
+            "type": "number"
           },
           "demand_level": {
             "type": "string"
@@ -81,10 +72,7 @@
         "type": "object",
         "properties": {
           "reviews": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
+            "type": "array"
           }
         },
         "required": [
@@ -114,11 +102,7 @@
             "type": "integer"
           },
           "sales_history": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            },
-            "nullable": true
+            "type": "number"
           },
           "seasonal_factor": {
             "type": "number"
@@ -144,21 +128,13 @@
             "type": "string"
           },
           "features": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "array"
           },
           "brand": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "target_keywords": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
+            "type": "array"
           }
         },
         "required": [

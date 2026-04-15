@@ -1,5 +1,5 @@
 name: ecommerce-ai-mcp
-description: '**Online Retail Intelligence**'
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: write_product_description
@@ -33,7 +33,7 @@ tools:
     type: number
     required: true
   - name: competitor_prices
-    type: array
+    type: number
     required: false
   - name: strategy
     type: string
@@ -69,7 +69,7 @@ tools:
     type: integer
     required: false
   - name: sales_history
-    type: array
+    type: number
     required: false
   - name: seasonal_factor
     type: number

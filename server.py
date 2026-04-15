@@ -18,8 +18,7 @@ from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP(
-    "ecommerce-ai")
+mcp = FastMCP("ecommerce-ai", instructions="")
 
 # ---------------------------------------------------------------------------
 # Rate limiting
