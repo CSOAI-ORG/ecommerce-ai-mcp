@@ -1,60 +1,33 @@
 # E-Commerce AI MCP Server
 
-**Online Retail Intelligence**
+> By [MEOK AI Labs](https://meok.ai) — Product description writing, pricing optimization, review summarization, and SEO meta generation
 
-Built by [MEOK AI Labs](https://meok.ai)
-
----
-
-An MCP server for e-commerce businesses. Write compelling product descriptions, optimize pricing with competitor analysis, summarize product reviews into actionable insights, forecast inventory with reorder alerts, and generate SEO-optimized meta tags.
-
-## Tools
-
-| Tool | Description |
-|------|-------------|
-| `write_product_description` | Generate compelling product descriptions with audience-targeted tone |
-| `optimize_pricing` | Pricing optimization using market data and strategy selection |
-| `summarize_reviews` | Summarize reviews into aspect-based insights with pros and cons |
-| `forecast_inventory` | Inventory forecasting with reorder points and stockout projections |
-| `generate_seo_meta` | Generate SEO meta tags, Open Graph, and Schema.org markup |
-
-## Quick Start
+## Installation
 
 ```bash
 pip install ecommerce-ai-mcp
 ```
 
-### Claude Desktop
-
-```json
-{
-  "mcpServers": {
-    "ecommerce-ai": {
-      "command": "python",
-      "args": ["-m", "server"],
-      "cwd": "/path/to/ecommerce-ai-mcp"
-    }
-  }
-}
-```
-
-### Direct Usage
+## Usage
 
 ```bash
 python server.py
 ```
 
-## Rate Limits
+## Tools
 
-| Tier | Requests/Hour |
-|------|--------------|
-| Free | 60 |
-| Pro | 5,000 |
+This server provides e-commerce intelligence tools including:
+
+- Product description generation with SEO optimization
+- Dynamic pricing optimization based on demand signals
+- Customer review summarization and sentiment analysis
+- Inventory forecasting
+- SEO meta tag generation for product pages
+
+## Authentication
+
+Free tier: 60 calls/hour. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
 
 ## License
 
-MIT - see [LICENSE](LICENSE)
-
----
-
-*Part of the MEOK AI Labs MCP Marketplace*
+MIT — MEOK AI Labs
