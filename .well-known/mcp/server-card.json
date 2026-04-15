@@ -1,0 +1,57 @@
+{
+  "name": "ecommerce-ai",
+  "description": "\u0001",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/ecommerce-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "write_product_description",
+      "description": "Generate a compelling product description for an e-commerce listing."
+    },
+    {
+      "name": "optimize_pricing",
+      "description": "Optimize product pricing using market data and strategy."
+    },
+    {
+      "name": "summarize_reviews",
+      "description": "Summarize product reviews into actionable insights."
+    },
+    {
+      "name": "forecast_inventory",
+      "description": "Forecast inventory needs and generate reorder recommendations."
+    },
+    {
+      "name": "generate_seo_meta",
+      "description": "Generate SEO-optimized meta tags for product pages."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Finance & Fintech"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
