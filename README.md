@@ -1,33 +1,38 @@
-# E-Commerce AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Product description writing, pricing optimization, review summarization, and SEO meta generation
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/ecommerce-ai-mcp)](https://github.com/CSOAI-ORG/ecommerce-ai-mcp/stargazers)
+
+# uecommerceU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/ecommerce-ai-mcp)](https://www.npmjs.com/package/@meok-ai/ecommerce-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/ecommerce-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install ecommerce-ai-mcp
+# or
+npm install -g @meok-ai/ecommerce-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-This server provides e-commerce intelligence tools including:
-
-- Product description generation with SEO optimization
-- Dynamic pricing optimization based on demand signals
-- Customer review summarization and sentiment analysis
-- Inventory forecasting
-- SEO meta tag generation for product pages
-
-## Authentication
-
-Free tier: 60 calls/hour. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
