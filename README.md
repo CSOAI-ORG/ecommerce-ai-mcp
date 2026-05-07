@@ -1,3 +1,7 @@
+[![ecommerce-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
+[![PyPI](https://img.shields.io/pypi/v/ecommerce-ai-mcp)](https://pypi.org/project/ecommerce-ai-mcp/)
+
 [![ecommerce-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp)
 
 <div align="center">
