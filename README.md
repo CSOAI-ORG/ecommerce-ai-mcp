@@ -1,45 +1,63 @@
-[![ecommerce-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
-[![PyPI](https://img.shields.io/pypi/v/ecommerce-ai-mcp)](https://pypi.org/project/ecommerce-ai-mcp/)
-
-[![ecommerce-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/ecommerce-ai-mcp)
-
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/ecommerce-ai-mcp)](https://github.com/CSOAI-ORG/ecommerce-ai-mcp/stargazers)
+# Ecommerce Ai MCP
 
-# uecommerceU aiU mcp
+**E-Commerce AI MCP Server - Online Retail Intelligence**
 
-****
-
-[![npm version](https://img.shields.io/npm/v/@meok-ai/ecommerce-ai-mcp)](https://www.npmjs.com/package/@meok-ai/ecommerce-ai-mcp)
+[![PyPI](https://img.shields.io/pypi/v/meok-ecommerce-ai-mcp)](https://pypi.org/project/meok-ecommerce-ai-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
-
-[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/ecommerce-ai-mcp/issues)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
 
 </div>
 
----
+## Overview
+
+E-Commerce AI MCP Server - Online Retail Intelligence
+Built by MEOK AI Labs | https://meok.ai
+
+Product description writing, pricing optimization, review summarization,
+inventory forecasting, and SEO meta generation.
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `write_product_description` | Generate a compelling product description for an e-commerce listing. |
+| `optimize_pricing` | Optimize product pricing using market data and strategy. |
+| `summarize_reviews` | Summarize product reviews into actionable insights. |
+| `forecast_inventory` | Forecast inventory needs and generate reorder recommendations. |
+| `generate_seo_meta` | Generate SEO-optimized meta tags for product pages. |
 
 ## Installation
 
 ```bash
-pip install ecommerce-ai-mcp
-# or
-npm install -g @meok-ai/ecommerce-ai-mcp
+pip install meok-ecommerce-ai-mcp
 ```
 
-## Quick Start
+## Usage with Claude Desktop
 
-See the project repository for full documentation and examples.
+Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
 
-## Enterprise Support
+```json
+{
+  "mcpServers": {
+    "ecommerce-ai": {
+      "command": "python",
+      "args": ["-m", "meok_ecommerce_ai_mcp.server"]
+    }
+  }
+}
+```
 
-- 📧 nicholas@csoai.org
-- 🌐 [CSOAI.org](https://csoai.org)
+## Usage with FastMCP
+
+```python
+from mcp.server.fastmcp import FastMCP
+
+# This server exposes 5 tool(s) via MCP
+# See server.py for full implementation
+```
 
 ## License
 
-MIT © [CSOAI](https://csoai.org)
-<!-- mcp-name: io.github.CSOAI-ORG/ecommerce-ai-mcp -->
+MIT © [MEOK AI Labs](https://meok.ai)
