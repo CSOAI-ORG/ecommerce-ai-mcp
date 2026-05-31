@@ -1,63 +1,78 @@
-<div align="center">
-
 # Ecommerce Ai MCP
 
-**E-Commerce AI MCP Server - Online Retail Intelligence**
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/ecommerce_ai_mcp/)
 
-[![PyPI](https://img.shields.io/pypi/v/meok-ecommerce-ai-mcp)](https://pypi.org/project/meok-ecommerce-ai-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
+> MEOK AI Labs — ecommerce-ai-mcp MCP Server
 
-</div>
+MEOK AI Labs — ecommerce-ai-mcp MCP Server
 
-## Overview
+---
 
-E-Commerce AI MCP Server - Online Retail Intelligence
-Built by MEOK AI Labs | https://meok.ai
-
-Product description writing, pricing optimization, review summarization,
-inventory forecasting, and SEO meta generation.
-
-## Tools
-
-| Tool | Description |
-|------|-------------|
-| `write_product_description` | Generate a compelling product description for an e-commerce listing. |
-| `optimize_pricing` | Optimize product pricing using market data and strategy. |
-| `summarize_reviews` | Summarize product reviews into actionable insights. |
-| `forecast_inventory` | Forecast inventory needs and generate reorder recommendations. |
-| `generate_seo_meta` | Generate SEO-optimized meta tags for product pages. |
-
-## Installation
+## 🚀 Quick Start
 
 ```bash
-pip install meok-ecommerce-ai-mcp
+# Install via pip
+pip install ecommerce_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install ecommerce-ai-mcp --client claude
 ```
 
-## Usage with Claude Desktop
+## ✨ Features
 
-Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
+- Product catalog management
+- Cart & checkout
+- Stripe integration
+- x402 protocol support
+- Multi-currency
 
-```json
-{
-  "mcpServers": {
-    "ecommerce-ai": {
-      "command": "python",
-      "args": ["-m", "meok_ecommerce_ai_mcp.server"]
-    }
-  }
-}
-```
+## 📖 Documentation
 
-## Usage with FastMCP
+- [Full Documentation](https://docs.meok.ai/ecommerce-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-```python
-from mcp.server.fastmcp import FastMCP
+## 🛡️ Compliance
 
-# This server exposes 5 tool(s) via MCP
-# See server.py for full implementation
-```
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## License
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-MIT © [MEOK AI Labs](https://meok.ai)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
+
+## 🏢 Enterprise
+
+Need custom development, SLA guarantees, or white-label deployment?
+
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
+
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
