@@ -8,7 +8,6 @@ inventory forecasting, and SEO meta generation.
 
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import time
@@ -109,7 +108,7 @@ def write_product_description(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -209,7 +208,7 @@ def optimize_pricing(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -315,7 +314,7 @@ def summarize_reviews(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -440,7 +439,7 @@ def forecast_inventory(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -547,7 +546,7 @@ def generate_seo_meta(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -620,5 +619,8 @@ def generate_seo_meta(
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

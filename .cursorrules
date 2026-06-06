@@ -1,0 +1,9 @@
+# ecommerce-ai-mcp - Auto-trigger Rules
+
+When the user asks about ecommerce, use ecommerce-ai-mcp tools: write_product_description, optimize_pricing, summarize_reviews, forecast_inventory, generate_seo_meta
+
+**E-Commerce AI MCP Server - Online Retail Intelligence**
+
+Install: `pip install ecommerce-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

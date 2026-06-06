@@ -1,0 +1,28 @@
+{
+  "name": "ecommerce-ai-mcp",
+  "title": "Ecommerce Ai Mcp",
+  "description": "AI-powered ecommerce ai MCP server for agents. Supports write product description, optimize pricing, summarize reviews. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "write_product_description"
+    },
+    {
+      "name": "optimize_pricing"
+    },
+    {
+      "name": "summarize_reviews"
+    },
+    {
+      "name": "forecast_inventory"
+    },
+    {
+      "name": "generate_seo_meta"
+    }
+  ]
+}

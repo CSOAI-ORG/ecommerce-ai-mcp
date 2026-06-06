@@ -1,0 +1,36 @@
+# ecommerce-ai-mcp
+# **E-Commerce AI MCP Server - Online Retail Intelligence**
+
+## Install
+```bash
+pip install ecommerce-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `write_product_description`
+Generate a compelling product description for an e-commerce listing.
+
+### `optimize_pricing`
+Optimize product pricing using market data and strategy.
+
+### `summarize_reviews`
+Summarize product reviews into actionable insights.
+
+### `forecast_inventory`
+Forecast inventory needs and generate reorder recommendations.
+
+### `generate_seo_meta`
+Generate SEO-optimized meta tags for product pages.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
