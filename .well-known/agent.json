@@ -1,0 +1,68 @@
+{
+  "name": "ecommerce-ai-mcp",
+  "description": "Ecommerce Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/ecommerce-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "write_product_description",
+      "name": "Write Product Description",
+      "description": "write_product_description via ecommerce-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "optimize_pricing",
+      "name": "Optimize Pricing",
+      "description": "optimize_pricing via ecommerce-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "summarize_reviews",
+      "name": "Summarize Reviews",
+      "description": "summarize_reviews via ecommerce-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "forecast_inventory",
+      "name": "Forecast Inventory",
+      "description": "forecast_inventory via ecommerce-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_seo_meta",
+      "name": "Generate Seo Meta",
+      "description": "generate_seo_meta via ecommerce-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

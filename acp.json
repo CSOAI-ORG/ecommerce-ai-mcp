@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "ecommerce-ai-mcp",
+    "description": "Ecommerce Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "ecommerce-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "write_product_description",
+      "optimize_pricing",
+      "summarize_reviews",
+      "forecast_inventory",
+      "generate_seo_meta"
+    ]
+  }
+}
